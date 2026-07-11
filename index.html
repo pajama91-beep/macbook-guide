@@ -206,6 +206,30 @@
     .card li { margin-bottom: 8px; }
     .card li:last-child { margin-bottom: 0; }
 
+    /* photos */
+    .lesson-photo {
+      margin: 0 0 18px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,0.03);
+      background: var(--card);
+    }
+    .lesson-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+      object-fit: cover;
+    }
+    .lesson-photo figcaption {
+      padding: 10px 16px;
+      font-size: 12.5px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
     .tip {
       margin-top: 14px;
       background: var(--green-soft);
@@ -516,6 +540,20 @@
       padding: 30px 10px 36px;
     }
     .home-hero .big-emoji { font-size: 64px; display: block; margin-bottom: 16px; }
+    .hero-photo {
+      max-width: 720px;
+      margin: 30px auto 0;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 440px;
+      object-fit: cover;
+    }
     .home-hero h2 {
       font-size: clamp(30px, 6vw, 44px);
       font-weight: 900;
@@ -639,6 +677,7 @@
       <span class="big-emoji">👋</span>
       <h2>맥북, 처음이라도<br /><span class="grad">괜찮아요</span></h2>
       <p>전원 켜는 법부터 트랙패드 제스처, 필수 단축키, 백업까지.<br />10개의 짧은 레슨으로 맥북과 친해져 보세요. 진행 상황은 자동으로 저장됩니다.</p>
+      <div class="hero-photo"><img src="img/hero.jpg" alt="보라색 조명 아래 반쯤 열린 맥북 프로" /></div>
     </div>
     <div class="lesson-list" id="lessonList">
       <button class="lesson-card" data-target="start">
@@ -717,6 +756,11 @@
       <p class="sub">박스에서 막 꺼낸 맥북, 어디를 눌러야 켜질까요? 처음 켰을 때 나오는 화면들을 미리 알아두면 당황하지 않아요.</p>
     </div>
 
+    <figure class="lesson-photo">
+      <img src="img/setup.jpg" alt="책상 위에 놓인 맥북" loading="lazy" />
+      <figcaption>책상 위에 놓인 맥북 — 뚜껑을 열기만 하면 켜져요.</figcaption>
+    </figure>
+
     <div class="card">
       <h3><span class="step-num">1</span>전원 켜기</h3>
       <p>맥북은 <strong>뚜껑(화면)을 열기만 해도 자동으로 켜집니다.</strong> 만약 켜지지 않는다면 키보드 오른쪽 위 모서리의 <strong>Touch ID 버튼(전원 버튼)</strong>을 꾹 눌러주세요.</p>
@@ -778,6 +822,11 @@
       <h2>트랙패드 제스처</h2>
       <p class="sub">맥북의 트랙패드는 단순한 마우스 대용품이 아니에요. 손가락 개수에 따라 완전히 다른 기능이 실행됩니다. 아래 8가지만 익히면 마우스가 필요 없어요.</p>
     </div>
+
+    <figure class="lesson-photo">
+      <img src="img/trackpad.jpg" alt="맥북 키보드 아래의 넓은 트랙패드" loading="lazy" />
+      <figcaption>키보드 아래 넓은 판이 트랙패드예요. 손가락 개수에 따라 하는 일이 달라집니다.</figcaption>
+    </figure>
 
     <div class="grid-2">
       <div class="gesture-card">
@@ -853,6 +902,11 @@
       <h2>키보드 &amp; 단축키</h2>
       <p class="sub">맥 키보드의 주인공은 <strong>⌘ 커맨드 키</strong>입니다. 윈도우의 Ctrl이 하던 일을 맥에서는 대부분 ⌘가 해요.</p>
     </div>
+
+    <figure class="lesson-photo">
+      <img src="img/keyboard.jpg" alt="화면 빛이 비치는 맥북 키보드" loading="lazy" />
+      <figcaption>맥북 키보드 — 스페이스바 양옆의 ⌘ 커맨드 키가 단축키의 주인공이에요.</figcaption>
+    </figure>
 
     <div class="card">
       <h3>🗝️ 특수 키 4형제부터 알아두기</h3>
@@ -936,6 +990,11 @@
       <h2>화면 구성 이해하기</h2>
       <p class="sub">맥 화면은 딱 4가지만 알면 됩니다: 메뉴 막대, Dock, Finder, 그리고 Spotlight.</p>
     </div>
+
+    <figure class="lesson-photo">
+      <img src="img/desktop.jpg" alt="macOS 바탕화면이 켜진 맥북 에어" loading="lazy" />
+      <figcaption>실제 macOS 화면 — 맨 위의 가느다란 줄이 메뉴 막대, 아래 가운데 아이콘 모음이 Dock이에요.</figcaption>
+    </figure>
 
     <div class="card">
       <h3><span class="step-num">1</span>메뉴 막대 (화면 맨 위)</h3>
@@ -1050,6 +1109,11 @@
       <h2>일상 활용</h2>
       <p class="sub">앱 설치부터 스크린샷, 아이폰 연동까지 — 매일 쓰게 될 실전 기능들입니다.</p>
     </div>
+
+    <figure class="lesson-photo">
+      <img src="img/daily.jpg" alt="맥북과 모니터, 마우스가 놓인 책상" loading="lazy" />
+      <figcaption>익숙해지면 이렇게 모니터·마우스를 연결해 데스크탑처럼 쓸 수도 있어요.</figcaption>
+    </figure>
 
     <div class="card">
       <h3>📲 앱 설치하고 삭제하기</h3>
@@ -1166,6 +1230,11 @@
       <p class="sub">윈도우를 쓰다 오셨나요? "Ctrl+C가 안 먹혀요!"는 모든 윈도우 이주민의 첫 관문입니다. 차이만 알면 금방 적응해요.</p>
     </div>
 
+    <figure class="lesson-photo">
+      <img src="img/windows.jpg" alt="윈도우가 실행 중인 노트북" loading="lazy" />
+      <figcaption>이런 윈도우 노트북을 쓰다 오셨다면, 이번 레슨의 번역표가 큰 도움이 될 거예요.</figcaption>
+    </figure>
+
     <div class="card">
       <h3>🔄 단축키 번역표</h3>
       <table class="cmp-table">
@@ -1219,6 +1288,11 @@
       <h2>백업·보안·업데이트</h2>
       <p class="sub">사진, 문서, 추억… 맥북이 고장 나거나 잃어버려도 데이터는 지킬 수 있어요. 딱 세 가지만 설정해 두면 됩니다.</p>
     </div>
+
+    <figure class="lesson-photo">
+      <img src="img/backup.jpg" alt="애플 로고가 보이는 맥북 뒷모습" loading="lazy" />
+      <figcaption>소중한 맥북 — 기기만큼 안의 데이터도 지켜야 진짜 내 것이에요.</figcaption>
+    </figure>
 
     <div class="card">
       <h3>⏰ Time Machine — 맥북 통째로 자동 백업</h3>
@@ -1353,7 +1427,8 @@
 
 <footer>
   맥북 첫걸음 · 맥북이 처음인 분들을 위한 학습 앱<br />
-  진행 상황은 이 브라우저에 자동 저장됩니다
+  진행 상황은 이 브라우저에 자동 저장됩니다<br />
+  사진: Unsplash (무료 라이선스)
 </footer>
 
 <div id="toast"></div>
